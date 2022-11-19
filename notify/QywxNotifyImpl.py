@@ -33,8 +33,3 @@ class QywxNotifyImpl(BaseNotify):
 
         r = requests.post(url, data=json.dumps(data)).json()
         return r["errcode"] == 0
-
-
-if __name__ == '__main__':
-    n = QywxNotifyImpl("58a7fecf-ec17-4de7-a794-b93ca80f23c6", [], [])
-    print(n.notify("111112222"))

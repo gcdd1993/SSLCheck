@@ -1,0 +1,9 @@
+domains:
+  - www.baidu.com
+notify:
+  - type: QYWX
+    mentioned:
+      name:
+        - Musk.Chen
+      phone:
+        - 17602526128

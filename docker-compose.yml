@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  ssl-check:
+    image: gcdd1993/ssl-check
+    container_name: ssl-check
+    volumes:
+      - ./config.yaml:/scripts/config.yaml

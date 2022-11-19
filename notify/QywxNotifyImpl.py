@@ -6,7 +6,7 @@ import json
 
 import requests
 
-from BaseNotify import BaseNotify
+from notify.BaseNotify import BaseNotify
 
 
 class QywxNotifyImpl(BaseNotify):

@@ -14,8 +14,8 @@ class SSLCheck:
 
     """
 
-    def __init__(self, url):
-        self.url = url
+    def __init__(self, domain):
+        self.domain = domain
 
     def get_str_time(self):
         """
@@ -24,7 +24,7 @@ class SSLCheck:
         :return:
         """
         x509 = pyopenssl.OpenSSL.crypto.load_certificate(pyopenssl.OpenSSL.crypto.FILETYPE_PEM,
-                                                         pyopenssl.ssl.get_server_certificate((self.url, 443)))
+                                                         pyopenssl.ssl.get_server_certificate((self.domain, 443)))
         return x509.get_notAfter().decode()[0:-1]
 
     def get_ssl_time(self):

@@ -1,0 +1,10 @@
+domains:
+  - www.baidu.com # 待检测域名列表
+notify:
+  - type: QYWX # 通知类型，QYWX=企业微信机器人
+    key: "" # 企业微信机器人Key
+    mentioned: # 企业微信@
+      name: # 企业微信用户名
+        - xxx
+      phone: # 企业微信手机号
+        - xxx
